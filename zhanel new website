@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мой первый сайт</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Привет, это мой первый сайт!</h1>
+    <div id="content">
+        <p>Я рад приветствовать вас здесь!</p>
+        <button class="button">Нажми на меня</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
