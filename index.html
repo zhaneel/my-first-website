@@ -5,20 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Мой первый сайт</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Добавьте эти стили */
+        audio {
+            width: 100%;
+            max-width: 400px;
+            margin: 20px 0;
+            display: block;
+        }
+    </style>
 </head>
 <body>
     <h1>Привет, это мой первый сайт!</h1>
     <div id="content">
         <p>Я рад приветствовать вас здесь!</p>
+        
+        <!-- Добавьте этот аудиоплеер -->
+        <audio controls>
+            <source src="audio/music.mp3" type="audio/mpeg">
+            Ваш браузер не поддерживает аудио
+        </audio>
+        
         <button class="button">Нажми на меня</button>
     </div>
+    
     <script src="script.js"></script>
+    <!-- Добавьте этот скрипт -->
+    <script>
+        document.addEventListener('click', function() {
+            const audio = document.querySelector('audio');
+            audio.play().catch(e => console.log("Нажмите Play вручную"));
+        });
+    </script>
 </body>
 </html>
-<audio controls>
-    <source src="audio/music.mp3" type="audio/mpeg">
-</audio>
-<source src="music.mp3" type="audio/mpeg">
-<audio controls>
-    <source src="audio/music.ogg" type="audio/ogg">
-</audio>
